@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+  </head>
+  <body>
+    <h3>
+      Desarrollar una aplicación que se encargará de armar presupuestos de un
+      electricista, para que éste los pueda entregar a los clientes. El
+      electricista cobra un valor fijo de $U 200 (doscientos pesos) por hora. Si
+      utiliza un asistente, este asistente cobra $U 150 (ciento cincuenta pesos)
+      por hora y trabaja la misma cantidad de horas y días que el electricista
+      en caso de ser parte del proyecto. Al costo que haya de compra de
+      materiales, el electricista le agrega un 10% (diez por ciento) por
+      concepto de compra y traslado de los materiales hasta el lugar de la obra.
+    </h3>
+
+    <label for="txtHorasTrabajo"> Ingrese horas de trabajo: </label> <br />
+    <input type="text" id="txtHorasTrabajo" /> <br />
+
+    <label for="txtDiasTrabajo"> Ingrese días de trabajo: </label> <br />
+    <input type="text" id="txtDiasTrabajo" /> <br />
+
+    <label for="slcAsistente">Asistente:</label>
+    <select id="slcAsistente">
+      <option value="a">Sí</option>
+      <option value="n">No</option>
+    </select>
+    <br />
+
+    <label for="txtCostoMateriales"> Ingrese costo total de materiales: </label>
+    <br />
+    <input type="text" id="txtCostoMateriales" /> <br />
+
+    <input type="button" value="Calcular" id="btnCalcular" />
+
+    <p id="pRespuesta"></p>
+
+    <script src="js/ej9.js"></script>
+  </body>
+</html>
