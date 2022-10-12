@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+  </head>
+  <body>
+    <h3>
+      a) Crear un campo de texto y un botón para ingresar nombres a un array.
+      Con cada ingreso mostrar todos los elementos, uno por línea y al final
+      mostrar la cantidad de elementos que tiene el array.
+    </h3>
+    <h3>
+      b) Crear un nuevo campo de texto y otro botón para ingresar en el campo de
+      texto un número de posición y mostrar en un párrafo el elemento que se
+      encuentra en esa posición. Además en otro párrafo mostrar el último
+      elemento del array.
+    </h3>
+    <h3>
+      c) Crear dos campos de texto para nombre a buscar y nuevo nombre y al
+      presionar un botón buscar si ese elemento existe y en caso que exista
+      sustituir el elemento buscado por el nuevo, sino informar que no existe
+      ese elemento, en ese caso el nombre nuevo no se utilizará.
+    </h3>
+
+    <label for="txtNombre">Ingrese nombre:</label> <br />
+    <input type="text" id="txtNombre" /> <br />
+
+    <input type="button" value="Mostrar nombres" id="btnMostrarNombres" />
+
+    <p id="pNombres"></p>
+
+    <label for="txtPosicion">Ingrese numéro de posicion:</label> <br />
+    <input type="text" id="txtPosicion" /> <br />
+
+    <input type="button" value="Mostrar elemento" id="btnMostrarElemento" />
+
+    <p id="pPosicion"></p>
+
+    <p id="pUltimoElemento"></p>
+
+    <label for="txtNombreAbuscar">Ingrese nombre a buscar:</label> <br />
+    <input type="text" id="txtNombreAbuscar" /> <br />
+
+    <label for="txtNombreSustituto">Ingrese nombre sustituto:</label> <br />
+    <input type="text" id="txtNombreSustituto" /> <br />
+
+    <input type="button" value="Sustituir" id="btnSustituir" />
+
+    <p id="pSustituto"></p>
+
+    <script src="JS/ej7.js"></script>
+  </body>
+</html>
