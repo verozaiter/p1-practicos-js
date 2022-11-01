@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <h3>
+      Una empresa de venta de celulares quiere llevar registro de sus ventas.
+      para cada venta se ingresa marca (Samsung, Sony o LG), modelo (texto),
+      precio (número) y cantidad de unidades (número).
+    </h3>
+    <h3>
+      a) Crear la interfaz HTML que permita el ingreso de los datos solicitados.
+      El dato correspondiente a la marca se debe capturar a través de un combo
+      desplegable.
+    </h3>
+    <h3>
+      b) Crear la funcionalidad javascript que permita almacenar ventas,
+      teniendo en cuenta que se debe validar que el precio sea numérico y el
+      modelo no esté vacío.
+    </h3>
+    <h3>
+      c) Agregar a la interfaz HTML un botón y una tabla de datos y listar en
+      ella todas las ventas que superen los dos mil pesos. El total de una venta
+      se obtendrá de la multiplicación del precio por la cantidad de unidades.
+      Al hacer click en el botón se cargará la tabla.
+    </h3>
+    <h3>
+      d) Crear un nuevo campo de texto en el que se pueda ingresar un modelo y
+      un botón que al ser presionado permita calcular el total de unidades
+      vendidas para ese modelo. Mostrar en un párrafo nuevo en el HTML la
+      cantidad de unidades obtenidas.
+    </h3>
+
+    <label for="slcMarca">Ingrese marca:</label> <br />
+    <select id="slcMarca"></select>
+    <br />
+
+    <label for="txtModelo"> Ingrese modelo: </label> <br />
+    <input type="text" id="txtModelo" /> <br />
+
+    <label for="txtPrecio"> Precio: </label> <br />
+    <input type="text" id="txtPrecio" /> <br />
+
+    <label for="txtCantidadUnidades"> Ingrese cantidad de unidades: </label>
+    <br />
+    <input type="text" id="txtCantidadUnidades" /> <br />
+
+    <input type="button" value="Listar Ventas Mayores a 2000" id="btnListar" />
+    <br />
+
+    <div id="tabla"></div>
+    <br />
+
+    <label for="txtModeloIngresado"> Buscar modelo: </label> <br />
+    <input type="text" id="txtModeloIngresado" /> <br />
+
+    <input
+      type="button"
+      value="Total de unidades vendidas"
+      id="btnUnidadesVendidasModelo"
+    />
+
+    <p id="pRespuesta"></p>
+
+    <script src="JS/ej4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>Ejercicio 7</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="cabezal" class="clearfix">
+        <img
+          id="logo"
+          src="https://p1.develotion.com/2022_08/logo.png"
+          alt="logo"
+        />
+        <ul id="navPrincipal">
+          <li id="btnSeccionAgregar" class="btn">
+            <a>Agregar</a>
+          </li>
+          <li id="btnSeccionProcesar" class="btn">
+            <a>Procesar</a>
+          </li>
+        </ul>
+        <div id="aux"><a>Menú alt. 1</a> | <a>Menú alt. 2</a></div>
+        <!-- FIN AUX -->
+      </div>
+      <!-- FIN CABEZAL -->
+      <div id="contenido">
+        <div class="seccion" id="seccionAgregar">
+          <h1>Agregar partido</h1>
+
+          <label for="txtNombre">Nombre:</label>
+          <input type="text" id="txtNombre" /><br />
+          <input type="button" value="Agregar" id="btnAgregar" />
+
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tblPartidos"></tbody>
+          </table>
+        </div>
+
+        <div class="seccion" id="seccionProcesar">
+          <h1>Procesar votos</h1>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Votos</th>
+              </tr>
+            </thead>
+            <tbody id="tblVotos"></tbody>
+          </table>
+          <input type="button" value="Procesar" id="btnProcesar" />
+        </div>
+      </div>
+      <!-- FIN CONTENIDO -->
+      <div id="pie">
+        <a href="https://www.ort.edu.uy">Footer</a>
+      </div>
+      <!-- FIN PIE -->
+    </div>
+    <!-- FIN CONTENEDOR -->
+
+    <script src="JS/ej6.js"></script>
+  </body>
+</html>

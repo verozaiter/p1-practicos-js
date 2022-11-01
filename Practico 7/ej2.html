@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="cabezal" class="clearfix">
+        <img
+          id="logo"
+          src="https://p1.develotion.com/2022_08/logo.png"
+          alt="logo"
+        />
+        <ul id="navPrincipal">
+          <li id="btnSeccionAgregar" class="btn admin invitado">
+            <a>Agregar</a>
+          </li>
+          <li id="btnSeccionListar" class="btn admin invitado">
+            <a>Listar</a>
+          </li>
+          <li id="btnSeccionBuscar" class="btn admin invitado">
+            <a>Buscar</a>
+          </li>
+          <li id="btnSeccionX" class="btn invitado">
+            <a>XXX</a>
+          </li>
+        </ul>
+        <div id="aux"><a>Menú alt. 1</a> | <a>Menú alt. 2</a></div>
+        <!-- FIN AUX -->
+      </div>
+      <!-- FIN CABEZAL -->
+      <div id="contenido">
+        <div id="seccionAgregar" class="seccion">
+          <label for="txtNombre">Nombre:</label>
+          <input type="text" id="txtNombre" /><br />
+
+          <label for="txtFecha">Fecha estreno:</label>
+          <input type="date" id="txtFecha" /><br />
+
+          <label for="slcGenero">Seleccione género:</label>
+          <select id="slcGenero"></select
+          ><br />
+
+          <label for="txtVotantes">Votantes:</label>
+          <input type="text" id="txtVotantes" /><br />
+
+          <label for="txtVotos">Votos:</label>
+          <input type="text" id="txtVotos" /><br />
+
+          <input type="button" value="Agregar" id="btnAgregar" />
+        </div>
+
+        <div id="seccionListar" class="seccion">
+          <input type="button" value="Listar" id="btnListar" />
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Promedio</th>
+              </tr>
+            </thead>
+            <tbody id="tblPeliculas"></tbody>
+          </table>
+        </div>
+
+        <div id="seccionBuscar" class="seccion">
+          <label for="txtBusqueda">Busqueda:</label>
+          <input type="text" id="txtBusqueda" /><br />
+
+          <input type="button" value="Buscar" id="btnBuscar" />
+
+          <p id="pPelicula"></p>
+        </div>
+        <div id="seccionX" class="seccion">
+          <h1>Sección nueva</h1>
+        </div>
+      </div>
+      <!-- FIN CONTENIDO -->
+      <div id="pie">
+        <a href="https://www.ort.edu.uy">Footer</a>
+      </div>
+      <!-- FIN PIE -->
+    </div>
+    <!-- FIN CONTENEDOR -->
+
+    <script src="JS/ej2.js"></script>
+  </body>
+</html>

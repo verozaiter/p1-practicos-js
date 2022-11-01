@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+  </head>
+  <body>
+    <h3>
+      En un local de venta de guitarras se venden tres tipos de guitarras:
+      clásicas, eléctricas y electroacústicas. De cada tipo existe un único
+      modelo. Se solicita generar una aplicación para la gestión de ventas de
+      productos. La aplicación dispone de un array indexado con objetos con la
+      información de cada tipo de guitarra:
+    </h3>
+    <h3>
+      a) Crear la interfaz HTML y toda la funcionalidad para registrar ventas.
+      Para cada venta se debe ingresar un número de tipo de guitarra (1-clásica,
+      2-eléctrica o 3-electroacústica) y la cantidad de guitarras que se
+      compran. Solo se comprará un tipo de guitarra por venta. Esas ventas
+      deberán quedar registradas en objetos dentro de un array indexado llamado
+      ventas. Se debe validar que ambos valores (tipo y cantidad) sean
+      numéricos.
+    </h3>
+    <h3>
+      b) Crear una función que reciba como parámetro un tipo de guitarra y
+      devuelva el total de pesos generados en total por la venta de ese tipo de
+      guitarras.
+    </h3>
+
+    <h3>
+      c) Utilizando la función de la parte b, crear la interfaz HTML y la
+      funcionalidad para listar en una tabla los totales generados por la venta
+      de cada tipo de guitarra. Se deberá trabajar cruzando datos de los
+      distintos arrays.
+    </h3>
+
+    <label for="slcGuitarra">Guitarra:</label> <br />
+    <select id="slcGuitarra"></select>
+    <br />
+    <label for="txtCantidad">Cantidad:</label> <br />
+    <input id="txtCantidad" />
+
+    <input type="button" value="Vender" id="btnVender" />
+
+    <div id="tabla"></div>
+
+    <script src="JS/ej3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+    <h3> a) Crear la interfaz y la funcionalidad para almacenar datos de personas (nombre, edad, nacionalidad).</h3>
+    <h3> b) Crear un botón que al ser presionado arme una tabla con todos los datos de personas disponibles.</h3>
+    <h3> c) Crear otro botón que arme una nueva tabla con todos los datos de las personas mayores de edad.</h3>
+
+    <label for="txtNombre">Ingrese nombre:</label> <br>
+    <input type="text" id="txtNombre"> <br>
+    
+    <label for="txtEdad">Ingrese edad:</label> <br>
+    <input type="text" id="txtEdad"> <br>
+
+    <label for="txtNacionalidad">Ingrese Nacionalidad:</label> <br>
+    <input type="text" id="txtNacionalidad"> <br>
+
+
+    <input type="button" value="Armar Tabla" id="btnMostrar">
+
+    <input type="button" value="Armar Tabla de personas Mayores" id="btnMostrarMayores"> <br> <br>
+
+    <div id="tblPersonas">
+        
+    </div> <br><br>
+  
+    <div id="tblPersonasMayores">
+    
+    </div>
+
+
+    <script src="JS/ej1.js"></script>
+</body>
+</html>

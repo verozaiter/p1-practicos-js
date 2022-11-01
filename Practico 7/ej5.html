@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+  </head>
+  <body>
+    <h3>
+      a) Crear una interfaz HTML con todos los elementos necesarios para
+      solicitar datos de zapatos. De cada zapato se debe solicitar marca, talle,
+      color y si es nacional o importado.
+    </h3>
+    <h3>
+      b) Crear la funcionalidad javascript para almacenar los datos que se
+      ingresan validando que el nombre (marca) no esté vacío y que el talle sea
+      un valor numérico y esté entre 30 y 46. Se valorará que el dato de
+      nacional o importado se obtenga a partir de un combo desplegable.
+    </h3>
+    <h3>
+      c) Crear una función que reciba como parámetro un array de zapatos (con el
+      formato del ejercicio b) y un valor (nacional o importado) y devuelva la
+      cantidad de zapatos con talle mayor a 38 que estén en el array recibido y
+      sean del tipo recibido en el segundo parámetro.
+    </h3>
+    <h3>
+      Atención, se solicita que la función reciba como parámetro el array a
+      trabajar, no se debe trabajar consultando una variable global.
+    </h3>
+    <h3>
+      d) Utilizando la función creada en la parte c, y el array de zapatos
+      disponible, informar en un nuevo párrafo si hay más zapatos nacionales de
+      talle mayor a 38 o si hay más importados de talle mayor a 38.
+    </h3>
+
+    <label for="txtMarca"> Ingrese marca: </label> <br />
+    <input type="text" id="txtMarca" /> <br />
+
+    <label for="txtTalle"> Talle: </label> <br />
+    <input type="text" id="txtTalle" /> <br />
+
+    <label for="txtColor"> Color: </label> <br />
+    <input type="text" id="txtColor" /> <br />
+
+    <label for="slcTipo">Ingrese tipo:</label> <br />
+    <select id="slcTipo">
+      <option value="Nacional">Nacional</option>
+      <option value="Importado">Importado</option>
+    </select>
+    <br />
+
+    <input type="button" value="Ingresar" id="btnIngresar" />
+
+    <p id="pRespuesta"></p>
+
+    <script src="JS/ej5.js"></script>
+  </body>
+</html>
