@@ -1,1 +1,1 @@
-## Prácticos JavaScript
+## Prácticos JavaScript - Programación 1
